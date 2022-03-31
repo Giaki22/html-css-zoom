@@ -4,3 +4,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #111111;
+}
+/* HEADER */
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 3px 0px;
+    width: 100%;
+}
+.header-left, .header-right{
+    display: flex;
+}
+.secure, .recording, .viewmode{
+    background-color: #0a0b0b;
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+.status, .viewmode-name{
+    margin: 0px 5px;
+}
+/* COLORS */
+.green{
+    color: #20d959;
+}
+.grey{
+    color: #a8a8a8;
+}
+.lightgrey{
+    color: #cfcfcf;
+}
+/* FONTAWESOME */
+.fa-pause, .fa-stop{
+    margin: 0px 3px;
+}

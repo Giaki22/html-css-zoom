@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Zoom</title>
 </head>
 <body>
-    <Header></Header>
+    <Header>
+        <div class="header-left">
+            <div class="secure green">
+                <i class="fa-solid fa-shield-halved"></i></div>
+            <div class="recording lightgrey">
+                <i class="fa-solid fa-floppy-disk grey"></i>
+                <span class="status">Recording...</span>
+                <i class="fa-solid fa-pause grey"></i>
+                <i class="fa-solid fa-stop grey"></i>
+            </div>
+        </div>
+        <div class="header-right lightgrey">
+            <div class="viewmode">
+                <i class="fa-solid fa-table-cells grey"></i>
+                <span class="viewmode-name">View</span>
+            </div>
+        </div>
+    </Header>
     <div class="container-cams">
         <div class="cam"></div>
     </div>
