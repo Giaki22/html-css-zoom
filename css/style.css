@@ -91,12 +91,40 @@ header{
 }
 /* FOOTER */
 footer{
-    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b1b1b;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    min-height: 10vh;
+    align-items: center;
+    padding: 10px 30px;
+}
+.footer-left, .footer-center, .footer-right{
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+.footer-left, .footer-center, .footer-right, .column, .row, .mic, .video, .nusers, .sharescreen, .commands{
+    display: flex;
+}
+.column{
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
+}
+.row{
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+/* BUTTONS */
+.end{
+    background-color: #b62726;
+    color: white;
+    font-weight: 600;
+    padding:5px 15px;
+    border-radius: 5px;
+    border: 0px;
 }
 /* COLORS */
 .green{
@@ -115,4 +143,10 @@ footer{
 /* FONTAWESOME */
 .fa-pause, .fa-stop{
     margin: 0px 3px;
+}
+.big{
+    font-size: 20px;
+}
+.small{
+    font-size: 10px;
 }
